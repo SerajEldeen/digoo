@@ -1,10 +1,12 @@
 "use client";
+import useCartStore from "@/store/cartStore";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 function Navbar() {
+  const cartItems = useCartStore((state) => state.cartItems);
   interface Navlinks {
     href: string;
     label: string;
@@ -22,11 +24,11 @@ function Navbar() {
 
   const isActive = (path: string) =>
     pathname === path
-      ? "text-[#D2691E]  "
+      ? "text-white  "
       : "text-black border-b-2 border-b-transparent hover:text-white hover:border-b-white  transition-all duration-300";
 
   return (
-    <nav className="bg-gray-500 md:px-20 px-5 py-6">
+    <nav className="bg-gray-500 md:px-20 px-5 py-4 fixed w-full z-50">
       <div className="flex justify-between items-center">
         {/* Hamburger or Close */}
         <button
@@ -66,7 +68,7 @@ function Navbar() {
         <div className="relative">
           <Link href="/cart">
             <span className="absolute bg-[#8B5E3C] text-white text-xs px-2 rounded-xl -top-2 -right-2">
-              3
+              {cartItems.length}
             </span>
             <Image src="/images/cart.png" width={30} height={30} alt="cart" />
           </Link>

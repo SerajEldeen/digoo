@@ -8,11 +8,12 @@ function ScrollingMarquee() {
     "توصيل لكل المحافظات",
     "خصومات خاصة للكميات ✨",
   ];
+  const Elements: string[] = [...phrases, ...phrases];
   return (
-    <div>
-      <Marquee pauseOnHover autoFill>
-        {phrases.map((phrase, index) => (
-          <div key={index} className="my-0 mx-10 text-black ">
+    <div className="bg-amber-950 p-2.5">
+      <Marquee pauseOnHover speed={60} loop={0} className="bg-[#8B5E3C]">
+        {Elements.map((phrase, index) => (
+          <div key={index} className="my-0 mx-10 text-white">
             {phrase}
           </div>
         ))}
