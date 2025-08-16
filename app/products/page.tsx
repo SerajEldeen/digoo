@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import FilterSortPanel from "@/components/FilterSortPanel";
 import products from "@/app/data/products.json";
+import categories from "@/app/data/categories.json";
 import Link from "next/link";
 import useCartStore from "@/store/cartStore";
 import { sessionStorageUtil } from "@/utils/sessionStorage";
@@ -11,9 +12,11 @@ function Page() {
   const addToCart = useCartStore((state) => state.addToCart);
   const [showPanel, setShowPanel] = useState(false);
   const [n, setN] = useState(6);
-  const [filterCategory, setFilterCategory] = useState<
-    "all" | "محافظ رجالى" | "شنط حريمى"
-  >(sessionStorageUtil.get("filterCategory", "all") as any);
+  type Category = (typeof categories)[number]["id"];
+  const [filterCategory, setFilterCategory] = useState<Category>(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    sessionStorageUtil.get("filterCategory", "all") as any
+  );
   const [sortOption, setSortOption] = useState(
     sessionStorageUtil.get("sortOption", "featured")!
   );
@@ -73,36 +76,21 @@ function Page() {
         <aside className="w-60 p-4 shadow-md sm:block hidden">
           <h2 className="font-semibold text-xl pb-2">التصفيه:</h2>
           <form className="space-y-2">
-            <label className="flex items-center space-x-reverse space-x-2">
-              <input
-                type="radio"
-                name="filter"
-                value="all"
-                checked={filterCategory === "all"}
-                onChange={(e) => setFilterCategory(e.target.value as any)}
-              />
-              <span className="px-1">الكل</span>
-            </label>
-            <label className="flex items-center space-x-reverse space-x-2">
-              <input
-                type="radio"
-                name="filter"
-                value="محافظ رجالى"
-                checked={filterCategory === "محافظ رجالى"}
-                onChange={(e) => setFilterCategory(e.target.value as any)}
-              />
-              <span className="px-1">محافظ رجالى</span>
-            </label>
-            <label className="flex items-center space-x-reverse space-x-2">
-              <input
-                type="radio"
-                name="filter"
-                value="شنط حريمى"
-                checked={filterCategory === "شنط حريمى"}
-                onChange={(e) => setFilterCategory(e.target.value as any)}
-              />
-              <span className="px-1">شنط حريمى</span>
-            </label>
+            {categories.map((cat) => (
+              <label
+                key={cat.id}
+                className="flex items-center space-x-reverse space-x-2"
+              >
+                <input
+                  type="radio"
+                  name="filter"
+                  value={cat.id}
+                  checked={filterCategory === cat.id}
+                  onChange={(e) => setFilterCategory(e.target.value as any)}
+                />
+                <span className="px-1">{cat.label}</span>
+              </label>
+            ))}
           </form>
         </aside>
 

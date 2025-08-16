@@ -99,6 +99,7 @@ function Page() {
       hover:opacity-90
       group
       transition duration-300 ease-in-out
+      shake-once
     "
               onClick={() =>
                 addToCart({
