@@ -10,28 +10,28 @@
     "id": 2,
     "description": "الخامة ممتازة والتفاصيل متقنة جدًا، شكراً على الذوق العالي",
     "name": "نورهان محمد",
-    "images": "/images/product1B.png",
+    "images": "/images/Feedback/product1B.png",
     "alt": "NourhanProduct"
   },
   {
     "id": 3,
     "description": "الشغل جميل جداً والتعامل راقي، إن شاء الله ليّا طلبات تانية",
     "name": "علياء حسن",
-    "images": "/images/product1A.png",
+    "images": "/images/Feedback/product1A.png",
     "alt": "AlyaProduct"
   },
   {
     "id": 4,
     "description": "استلمت الأوردر بسرعة، والتغليف كان ممتاز، شكراً جداً",
     "name": "مي وليد",
-    "images": "/images/product1B.png",
+    "images": "/images/Feedback/product1B.png",
     "alt": "MaiProduct"
   },
   {
     "id": 5,
     "description": "الشغل طالع زي الصورة بالظبط، ربنا يوفقك دايمًا",
     "name": "هدير سامي",
-    "images": "/images/product1A.png",
+    "images": "/images/Feedback/product1A.png",
     "alt": "HadeerProduct"
   }
 ]

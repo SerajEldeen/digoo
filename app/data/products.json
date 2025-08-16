@@ -1,102 +1,132 @@
 [
   {
     "id": 1,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 100,
     "name": "الحقيبه الجلدية الاسيوية",
     "category": "محافظ رجالى",
     "categoryId": 12,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   },
   {
     "id": 2,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 200,
     "name": "حقيبة ظهر جلدية فاخرة",
     "category": "شنط حريمى",
     "categoryId": 13,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   },
   {
     "id": 3,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 150,
     "name": "حقيبة كاجوال نسائية",
     "category": "محافظ رجالى",
     "categoryId": 14,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   },
   {
     "id": 4,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 180,
     "name": "شنطة يد صغيرة أنيقة",
     "category": "شنط حريمى",
     "categoryId": 15,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   },
   {
     "id": 5,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 220,
     "name": "حقيبة مدرسية جلد",
     "category": "محافظ رجالى",
     "categoryId": 16,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": false
   },
   {
     "id": 6,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 170,
     "name": "شنطة لابتوب جلد",
     "category": "شنط حريمى",
     "categoryId": 17,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   },
   {
     "id": 7,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 130,
     "name": "حقيبة يد كروس صغيرة",
     "category": "محافظ رجالى",
     "categoryId": 18,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": false
   },
   {
     "id": 8,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 210,
     "name": "حقيبة أنيقة للمناسبات",
     "category": "شنط حريمى",
     "categoryId": 19,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   },
   {
     "id": 9,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 140,
     "name": "حقيبة ظهر بسيطة",
     "category": "محافظ رجالى",
     "categoryId": 20,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": false
   },
   {
     "id": 10,
-    "productImages": ["/images/product1A.png", "/images/product1B.png"],
+    "productImages": [
+      "/images/Products/product1A.png",
+      "/images/Products/product1B.png"
+    ],
     "price": 195,
     "name": "حقيبة عملية للنساء",
     "category": "شنط حريمى",
     "categoryId": 21,
-    "categoryImg": "/images/3.jpg",
+    "categoryImg": "/images/Categories/3.jpg",
     "isBestSeller": true
   }
 ]

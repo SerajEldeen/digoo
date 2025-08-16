@@ -86,6 +86,7 @@ function Page() {
                   name="filter"
                   value={cat.id}
                   checked={filterCategory === cat.id}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   onChange={(e) => setFilterCategory(e.target.value as any)}
                 />
                 <span className="px-1">{cat.label}</span>

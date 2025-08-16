@@ -1,17 +1,12 @@
 [
   {
     "id": 1,
-    "image": "/images/1.jpg",
+    "image": "/images/Hero/1.jpg",
     "title": "1"
   },
   {
     "id": 2,
-    "image": "/images/2.jpg",
+    "image": "/images/Hero/2.jpg",
     "title": "2"
-  },
-  {
-    "id": 3,
-    "image": "/images/3.jpg",
-    "title": "3"
   }
 ]

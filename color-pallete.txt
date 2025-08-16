@@ -1,8 +1,0 @@
-| Role                 | Color Hex                           | Use Case & Notes                                                    |
-| -------------------- | ----------------------------------- | ------------------------------------------------------------------- |
-| **Background**       | `#F2F4F7`                           | Page background, card backgrounds — clean and neutral, easy on eyes |
-| **Primary Text**     | `#1C1E21`                           | Main text — excellent high contrast, very readable                  |
-| **Primary Accent**   | `#8B5E3C` or `#A0522D` (warm brown) | Buttons, links, highlights — gives warmth & artisan feel            |
-| **Secondary Accent** | `#D2691E` or `#E07A5F` (terracotta) | Hover states, badges, subtle highlights                             |
-| **Neutral Medium**   | `#6B7280` (gray-500)                | Secondary text, icons, less prominent info                          |
-| **CTA Button Text**  | `#F2F4F7`                           | Contrast on buttons with brown background                           |
