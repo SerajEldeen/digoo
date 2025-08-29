@@ -5,7 +5,6 @@ backend:
 
 media_folder: "public/images" # where uploaded images are stored
 public_folder: "/images" # folder reference in your JSON
-media_library:
 
 collections:
   - name: "products"
