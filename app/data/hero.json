@@ -8,5 +8,10 @@
     "id": 2,
     "image": "/images/Hero/2.jpg",
     "title": "2"
+  },
+  {
+    "id": 3,
+    "image": "/images/Hero/3.jpg",
+    "title": "3"
   }
 ]
