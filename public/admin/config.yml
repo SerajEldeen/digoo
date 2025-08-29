@@ -1,86 +1,103 @@
+# admin/config.yml
 backend:
   name: git-gateway
   branch: master
+  local_backend: true # enables local testing without GitHub
 
-media_folder: "public/images"
-public_folder: "/images"
+media_folder: "public/images" # where uploaded images are stored
+public_folder: "/images" # folder reference in your JSON
+media_library:
+  name: local # use local media library
 
 collections:
   - name: "products"
     label: "Products"
-    file: "app/data/products.json"
-    media_folder: "public/images/Products"
-    public_folder: "/images/Products"
-    description: "Manage all Products"
-    fields:
-      - { name: "id", label: "ID", widget: "number" }
-      - { name: "name", label: "Product Name", widget: "string" }
-      - { name: "price", label: "Price (EGP)", widget: "number" }
+    files:
+      - file: "app/data/products.json"
+        name: "products"
+        label: "Products Data"
+        media_folder: "public/images/Products"
+        public_folder: "/images/Products"
+        fields:
+          - { name: "id", label: "ID", widget: "number" }
+          - { name: "name", label: "Product Name", widget: "string" }
+          - { name: "price", label: "Price (EGP)", widget: "number" }
+          - name: "productImages"
+            label: "Product Images"
+            widget: "list"
+            field:
+              name: "image"
+              label: "Image"
+              widget: "image"
+              media_folder: "public/images/Products"
+              public_folder: "/images/Products"
+          - { name: "category", label: "Category", widget: "string" }
+          - { name: "categoryId", label: "Category ID", widget: "number" }
+          - name: "categoryImg"
+            label: "Category Image"
+            widget: "image"
+            media_folder: "public/images/Categories"
+            public_folder: "/images/Categories"
+          - {
+              name: "isBestSeller",
+              label: "Best Seller",
+              widget: "boolean",
+              default: false,
+            }
 
-      - name: "productImages"
-        label: "Product Images"
-        widget: "list"
-        field:
-          name: "image"
-          label: "Image"
-          widget: "image"
-          media_folder: "public/images/Products"
-          public_folder: "/images/Products"
-
-      - { name: "category", label: "Category", widget: "string" }
-      - { name: "categoryId", label: "Category ID", widget: "number" }
-
-      - name: "categoryImg"
-        label: "Category Image"
-        widget: "image"
-        media_folder: "public/images/Categories"
-        public_folder: "/images/Categories"
-
-      - {
-          name: "isBestSeller",
-          label: "Best Seller",
-          widget: "boolean",
-          default: false,
-        }
   - name: "categories"
     label: "Categories"
-    file: "app/data/categories.json"
-    description: "Manage product categories"
-    fields:
-      - { name: "id", label: "ID", widget: "string" }
-      - { name: "label", label: "Label", widget: "string" }
+    files:
+      - file: "app/data/categories.json"
+        name: "categories"
+        label: "Categories Data"
+        fields:
+          - { name: "id", label: "ID", widget: "string" }
+          - { name: "label", label: "Label", widget: "string" }
 
   - name: "feedback"
     label: "Feedback"
-    file: "app/data/feedback.json"
-    description: "Customer feedback entries"
-    fields:
-      - { name: "id", label: "ID", widget: "number" }
-      - { name: "description", label: "Feedback Text", widget: "text" }
-      - { name: "name", label: "Customer Name", widget: "string" }
-      - name: "images"
-        label: "Feedback Image"
-        widget: "image"
+    files:
+      - file: "app/data/feedback.json"
+        name: "feedback"
+        label: "Feedback Data"
         media_folder: "public/images/Feedback"
         public_folder: "/images/Feedback"
-      - { name: "alt", label: "Alt Text", widget: "string" }
+        fields:
+          - { name: "id", label: "ID", widget: "number" }
+          - { name: "description", label: "Feedback Text", widget: "text" }
+          - { name: "name", label: "Customer Name", widget: "string" }
+          - name: "images"
+            label: "Feedback Image"
+            widget: "image"
+            media_folder: "public/images/Feedback"
+            public_folder: "/images/Feedback"
+          - { name: "alt", label: "Alt Text", widget: "string" }
+
   - name: "hero"
     label: "Hero Section"
-    file: "app/data/hero.json"
-    description: "Manage homepage hero banners"
-    fields:
-      - { name: "id", label: "ID", widget: "number" }
-      - name: "image"
-        label: "Hero Image"
-        widget: "image"
+    files:
+      - file: "app/data/hero.json"
+        name: "hero"
+        label: "Hero Data"
         media_folder: "public/images/Hero"
         public_folder: "/images/Hero"
-      - { name: "title", label: "Title", widget: "string" }
+        fields:
+          - { name: "id", label: "ID", widget: "number" }
+          - name: "image"
+            label: "Hero Image"
+            widget: "image"
+            media_folder: "public/images/Hero"
+            public_folder: "/images/Hero"
+          - { name: "title", label: "Title", widget: "string" }
+
   - name: "shippingOptions"
     label: "Shipping Options"
-    file: "app/data/shippingOptions.json"
-    description: "Manage shipping options"
-    fields:
-      - { name: "value", label: "Price (EGP)", widget: "number" }
-      - { name: "label", label: "Label", widget: "string" }
-      - { name: "key", label: "Key", widget: "string" }
+    files:
+      - file: "app/data/shippingOptions.json"
+        name: "shippingOptions"
+        label: "Shipping Options Data"
+        fields:
+          - { name: "value", label: "Price (EGP)", widget: "number" }
+          - { name: "label", label: "Label", widget: "string" }
+          - { name: "key", label: "Key", widget: "string" }
