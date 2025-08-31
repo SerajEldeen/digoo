@@ -19,7 +19,7 @@ function Page() {
   const handleSendOrder = () => {
     const link = getWhatsAppLink();
     if (!link) {
-      toast.error("لا يوجد منتجات فى العربة");
+      toast.error(" لا يوجد منتجات فى العربة او لم يتم تحديد  الشحن");
       return;
     }
     window.open(link, "_blank");
@@ -107,13 +107,14 @@ function Page() {
             <select
               id="shipping"
               className="border border-gray-400 px-3 py-1 rounded"
-              defaultValue="ship"
+              defaultValue=""
+              required
               onChange={(e) => {
                 const price = parseInt(e.target.value);
                 setShippingPrice(price);
               }}
             >
-              <option value="ship" hidden>
+              <option value="" disabled hidden>
                 اختار المكانٍ
               </option>
               {shippingOptions.map((option) => (

@@ -4,7 +4,7 @@ export default function getWhatsAppLink() {
   const cartItems = useCartStore.getState().cartItems;
   const shippingPrice = useCartStore.getState().shippingPrice;
 
-  if (!cartItems || cartItems.length === 0) return null;
+  if (!cartItems || cartItems.length === 0 || !shippingPrice) return null;
   let message = "السلام عليكم,عايزة تأكيد على طلبى:\n\n";
 
   cartItems.forEach((e, i) => {
