@@ -18,7 +18,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 200,
+    "price": 110,
     "name": "حقيبة ظهر جلدية فاخرة",
     "category": "شنط حريمى",
     "categoryId": 13,
@@ -31,7 +31,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 150,
+    "price": 120,
     "name": "حقيبة كاجوال نسائية",
     "category": "محافظ رجالى",
     "categoryId": 14,
@@ -44,7 +44,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 180,
+    "price": 130,
     "name": "شنطة يد صغيرة أنيقة",
     "category": "شنط حريمى",
     "categoryId": 15,
@@ -57,7 +57,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 220,
+    "price": 140,
     "name": "حقيبة مدرسية جلد",
     "category": "محافظ رجالى",
     "categoryId": 16,
@@ -70,7 +70,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 170,
+    "price": 150,
     "name": "شنطة لابتوب جلد",
     "category": "شنط حريمى",
     "categoryId": 17,
@@ -83,7 +83,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 130,
+    "price": 160,
     "name": "حقيبة يد كروس صغيرة",
     "category": "محافظ رجالى",
     "categoryId": 18,
@@ -96,7 +96,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 210,
+    "price": 170,
     "name": "حقيبة أنيقة للمناسبات",
     "category": "شنط حريمى",
     "categoryId": 19,
@@ -109,7 +109,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 140,
+    "price": 180,
     "name": "حقيبة ظهر بسيطة",
     "category": "محافظ رجالى",
     "categoryId": 20,
@@ -122,7 +122,7 @@
       "/images/Products/product1A.png",
       "/images/Products/product1B.png"
     ],
-    "price": 195,
+    "price": 190,
     "name": "حقيبة عملية للنساء",
     "category": "شنط حريمى",
     "categoryId": 21,
