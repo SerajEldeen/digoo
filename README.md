@@ -1,4 +1,4 @@
-#👜 Digoo – Hand Made with Leather
+# 👜 Digoo – Hand Made with Leather
 
 Digoo is a handcrafted, leather-focused landing page built with love ❤️. It’s designed to showcase customized handmade leather products, built with Arabic support, and responsive across all devices.
 
