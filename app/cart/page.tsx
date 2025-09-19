@@ -19,7 +19,7 @@ function Page() {
   const handleSendOrder = () => {
     const link = getWhatsAppLink();
     if (!link) {
-      toast.error(" لا يوجد منتجات فى العربة او لم يتم تحديد  الشحن");
+      toast.error(" لا يوجد منتجات فى العربة او لم يتم تحديد الشحن");
       return;
     }
     window.open(link, "_blank");

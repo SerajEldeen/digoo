@@ -20,6 +20,6 @@ export default function getWhatsAppLink() {
   message += `\n🚚 الشحن: ${shippingPrice} جنيه\n`;
   message += `📦 الإجمالى: ${totalShipping} جنيه\n\n`;
 
-  const phoneNo = "201273616603";
+  const phoneNo = "";
   return `https://wa.me/${phoneNo}?text=${encodeURIComponent(message)}`;
 }
