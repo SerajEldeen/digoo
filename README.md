@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#👜 Digoo – Hand Made with Leather
 
-## Getting Started
+Digoo is a handcrafted, leather-focused landing page built with love ❤️. It’s designed to showcase customized handmade leather products, built with Arabic support, and responsive across all devices.
 
-First, run the development server:
+The page is static but allows users to place direct orders via WhatsApp, making it simple and practical for customers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+It is built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **Zustand** for global state management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🌐 **Arabic Ready**: Designed with RTL support for Arabic users.
+  -📱 **Responsive Design**: Fully mobile-friendly using Tailwind CSS.
+- 💬 **WhatsApp Ordering:**: Customers can place direct orders via WhatsApp.
+  -⚡**Static Page**: Lightweight, fast, and optimized for performance.
+  -👜**Handcrafted Products Showcase**: Highlighting leather items with elegant UI.
+  -🗂️**Zustand State Management**: Clean and simple global state handling.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- ⚡ **Next.js**: A powerful React framework for building fast, server-rendered, and highly optimized user interfaces with seamless routing and performance.
+  -📝 **TypeScript**: Adds static type checking to JavaScript, improving code reliability, developer productivity, and maintainability.
+- 🎨 **Tailwind CSS**: A utility-first CSS framework that enables rapid, responsive, and consistent UI design with minimal custom CSS.
+  -📦 **Zustand**: Minimal state management for handling cart/orders globally.
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Home Section                           | Products Section                           | Cart Section                           | Policy Section                           |
+| -------------------------------------- | ------------------------------------------ | -------------------------------------- | ---------------------------------------- |
+| ![Home](./public/images/Preview/3.png) | ![Products](./public/images/Preview/2.png) | ![Cart](./public/images/Preview/5.png) | ![Policy](./public/images/Preview/4.png) |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SerajEldeen/digoo.git
+   cd digoo
+   npm install
+   ```
+   ```bash
+   npm run dev
+   ```
